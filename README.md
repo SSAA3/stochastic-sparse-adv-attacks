@@ -2,7 +2,7 @@
 
 Manon Césaire, Hatem Hajri, Sylvain Lamprier, Patrick Gallinari\
 *IRT SystemX, Sorbonne Université*\
-\
+
 
 This repository contains PyTorch implementation of untargeted FGA and VFGA algorithms.
 
