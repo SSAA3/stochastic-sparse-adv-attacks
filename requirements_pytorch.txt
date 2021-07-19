@@ -1,0 +1,6 @@
+matplotlib
+numpy==1.18.5
+pandas
+torch==1.7.1
+torchvision==0.8.2
+tqdm
