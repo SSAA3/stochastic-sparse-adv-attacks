@@ -1,4 +1,8 @@
-# Stochastic Sparse Adversarial Attacks: Folded Gaussian Attack (FGA) & Voting Folded Gaussian Attack (VFGA)
+# [Stochastic Sparse Adversarial Attacks](https://arxiv.org/abs/2011.12423)
+
+Manon Césaire, Hatem Hajri, Sylvain Lamprier, Patrick Gallinari\
+*IRT SystemX, Sorbonne Université*\
+\
 
 This repository contains PyTorch implementation of untargeted FGA and VFGA algorithms.
 
