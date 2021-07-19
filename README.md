@@ -1,7 +1,7 @@
 # [Stochastic Sparse Adversarial Attacks](https://arxiv.org/abs/2011.12423)
 
 Manon Césaire, Hatem Hajri, Sylvain Lamprier, Patrick Gallinari\
-*IRT SystemX, Sorbonne Université*
+*IRT SystemX, LIP6 - Sorbonne University* 
 
 
 This repository contains PyTorch implementation of untargeted FGA and VFGA algorithms.
@@ -9,8 +9,7 @@ This repository contains PyTorch implementation of untargeted FGA and VFGA algor
 ## Requirements :
 To execute the code, please install the packages required in the `requirements_pytorch.txt` file.
 
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 ## How to execute the code :
 
@@ -129,6 +128,15 @@ If you want to see the run time comparison, you should generate adversarial samp
 &nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;
 
-## Reference :
+## Citation:
 
-[1] H. Hajri, M. Césaire, T. Combey, S. Lamprier and P. Gallinari. Stochastic sparse adversarial attacks. _arXiv preprint arXiv:2011.12423_, 2020.
+```
+@misc{cesaire2021stochastic,
+      title={Stochastic sparse adversarial attacks}, 
+      author={Manon Césaire and Hatem Hajri and Sylvain Lamprier and Patrick Gallinari},
+      year={2021},
+      eprint={2011.12423},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
