@@ -11,7 +11,7 @@ To execute the code, please install the packages required in the `requirements_p
 
 
 
-## How to execute the code :
+## How to execute the code : 
 
 The algorithms proposed in the paper can be run by using the script `start.py` :
 
@@ -40,31 +40,31 @@ selects the model on which the job will be performed.
 
 ### Generation of Adversarial Samples
 
-- To generate untargeted FGA adversarial samples against a the trained ResNet18 model over the CIFAR-10 dataset with $`N_S = 10`$ :  
+- To generate untargeted FGA adversarial samples against a the trained ResNet18 model over the CIFAR-10 dataset with Ns=10:  
 
 `python start.py --cuda_device "cuda" --job "attack" --attack "FGA" --dataset "CIFAR10" --model "resnet18" --sampling 10 --batch_size 50 --max_batch 100`  
 
-- To generate targeted VFGA adversarial samples against the pre-trained Inception-v3 model over the the ImageNet dataset with $`N_S = 10`$ :  
+- To generate targeted VFGA adversarial samples against the pre-trained Inception-v3 model over the the ImageNet dataset with Ns=10:  
 
 `python start.py --cuda_device "cuda" --job "attack" --attack "VFGA" --dataset "ImageNet" --model "inception_v3" --targeted --sampling 10 --batch_size 10 --max_batch 100`  
 
 ### Analyse Attack Performances 
 
-- To print out the performances of the untargeted FGA attack against the trained ResNet18 model over the the CIFAR-10 dataset with $`N_S = 10`$ :  
+- To print out the performances of the untargeted FGA attack against the trained ResNet18 model over the the CIFAR-10 dataset with Ns = 10:  
 
 `python start.py --cuda_device "cuda" --job "performances" --attack "FGA" --dataset "CIFAR10" --model "resnet18"  --sampling 10 --batch_size 50`
 
-- To print out the performances of the targeted VFGA attack against the pre-trained Inception-v3 model over the the ImageNet dataset with $`N_S = 10`$ :  
+- To print out the performances of the targeted VFGA attack against the pre-trained Inception-v3 model over the the ImageNet dataset with Ns = 10:  
 
 `python start.py --cuda_device "cuda" --job "performances" --attack "VFGA" --dataset "ImageNet" --model "inception_v3" --targeted --sampling 10 --batch_size 10`  
 
 ### Visualization of Adversarial Samples  
 
-- To display the adversarial sample and its original sample with the best $`L_0`$ score :
+- To display the adversarial sample and its original sample with the best L0 score :
 
 `python start.py --cuda_device "cuda" --job "visualization" --attack "VFGA" --dataset "ImageNet" --model "inception_v3" --targeted --sampling 10 --image_choice "best"`  
 
-- To show the adversarial sample and its original sample with a random $`L_0`$ score :  
+- To show the adversarial sample and its original sample with a random L0 score :  
 
 `python start.py --cuda_device "cuda" --job "visualization" --attack "VFGA" --dataset "ImageNet" --model "inception_v3" --targeted --sampling 10 --image_choice "random"`  
 
@@ -80,8 +80,8 @@ When generating adversarial attacks, a `"results_Name"` folder will be created w
 Several CSV files will be created during the generation. There will be as many `"Adversarial_i.csv"`, `"Original_i.csv"``"Labels_i.csv"` and `"Time_i.csv"` files as `"max_batch"`.  
 
 - Each `"Labels_i.csv"` file will contain two columns, the first with the original image label and the second with the adversarial image label.  
-- Each `"Original_i.csv"` has dimension `"batch_size"` $`\times`$ the image size (the image size is defined as the total number of pixels). Each row $`j`$ of `"Original_i.csv"` will contain the original image $`j`$ of the batch $`i`$.  
-- Each `"Adversarial_i.csv"`  has dimension `"batch_size"` $`\times`$ the image size (the image size is defined as the total number of pixels). Each row $`j`$ of `"Adversarial_i.csv"` will contain the adversarial image $`j`$ of the batch $`i`$.  
+- Each `"Original_i.csv"` has dimension `"batch_size"` x the image size (the image size is defined as the total number of pixels). Each row j of `"Original_i.csv"` will contain the original image j of the batch i.  
+- Each `"Adversarial_i.csv"`  has dimension `"batch_size"` x the image size (the image size is defined as the total number of pixels). Each row j of `"Adversarial_i.csv"` will contain the adversarial image j of the batch i.  
 
 ### Performances
 
@@ -91,15 +91,15 @@ When analyzing attack performances, a sub-folder `"results"` will be created ins
 - `"Time.csv"` containing the run time for each batch.  
 - `"Avg_Time.csv"` containing the average time to generate an adversarial sample.  
 - `"Performances.csv"` containing  the success rate SR and average distances for the generated adversarial samples.  
-- `"Best_Worst.csv"` containing the best and worst $`L_0`$ score among the generated adversarial samples.  
+- `"Best_Worst.csv"` containing the best and worst L0 score among the generated adversarial samples.  
 
 ### Visualization  
 
 When visualizing adversarial samples, there are several choices :  
 
-- `"best"` : visualization of the adversarial sample which obtained the best $`L_0`$ score.  
-- `"worst"` : visualization of the adversarial sample which obtained the worst $`L_0`$ score.  
-- `"random"` : visualization of a random adversarial sample together with its $`L_0`$ score.
+- `"best"` : visualization of the adversarial sample which obtained the best L0 score.  
+- `"worst"` : visualization of the adversarial sample which obtained the worst L0 score.  
+- `"random"` : visualization of a random adversarial sample together with its L0 score.
 
 The adversarial and original samples will be saved in the `"results"`files in .PNG format.
 
@@ -119,7 +119,7 @@ The adversarial and original samples will be saved in the `"results"`files in .P
 
 ## Run Time /Model Propagation Computation :  
 
-If you want to see the run time comparison, you should generate adversarial samples with `batch_size=1` and `max_batch=1,000`, then compute the performances in order to have the average run time comparison for $`1,000`$ images. For example:  
+If you want to see the run time comparison, you should generate adversarial samples with `batch_size=1` and `max_batch=1,000`, then compute the performances in order to have the average run time comparison for 1,000 images. For example:  
 
 `python start.py --cuda_device "cuda" --job "attack" --attack "VFGA" --dataset "ImageNet" --model "inception_v3" --train_or_test "test" --sampling 10 --batch_size 1 --max_batch 1000`  
 
