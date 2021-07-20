@@ -4,7 +4,7 @@ Manon Césaire, Hatem Hajri, Sylvain Lamprier, Patrick Gallinari\
 *IRT SystemX, LIP6 - Sorbonne University* 
 
 
-This repository contains PyTorch implementation of untargeted FGA and VFGA algorithms.
+This repository contains PyTorch implementation of targeted and untargeted FGA and VFGA algorithms.
 
 ## Requirements :
 To execute the code, please install the packages required in the `requirements_pytorch.txt` file.
