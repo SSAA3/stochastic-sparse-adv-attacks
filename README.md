@@ -44,17 +44,17 @@ selects the model on which the job will be performed.
 
 `python start.py --cuda_device "cuda" --job "attack" --attack "FGA" --dataset "CIFAR10" --model "resnet18" --sampling 10 --batch_size 50 --max_batch 100`  
 
-- To generate targeted VFGA adversarial samples against the pre-trained Inception-v3 model over the the ImageNet dataset with Ns=10:  
+- To generate targeted VFGA adversarial samples against the pre-trained Inception-v3 model over the ImageNet dataset with Ns=10:  
 
 `python start.py --cuda_device "cuda" --job "attack" --attack "VFGA" --dataset "ImageNet" --model "inception_v3" --targeted --sampling 10 --batch_size 10 --max_batch 100`  
 
 ### Analyse Attack Performances 
 
-- To print out the performances of the untargeted FGA attack against the trained ResNet18 model over the the CIFAR-10 dataset with Ns = 10:  
+- To print out the performances of the untargeted FGA attack against the trained ResNet18 model over the CIFAR-10 dataset with Ns = 10:  
 
 `python start.py --cuda_device "cuda" --job "performances" --attack "FGA" --dataset "CIFAR10" --model "resnet18"  --sampling 10 --batch_size 50`
 
-- To print out the performances of the targeted VFGA attack against the pre-trained Inception-v3 model over the the ImageNet dataset with Ns = 10:  
+- To print out the performances of the targeted VFGA attack against the pre-trained Inception-v3 model over the ImageNet dataset with Ns = 10:  
 
 `python start.py --cuda_device "cuda" --job "performances" --attack "VFGA" --dataset "ImageNet" --model "inception_v3" --targeted --sampling 10 --batch_size 10`  
 
