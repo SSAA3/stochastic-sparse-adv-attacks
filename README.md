@@ -1,4 +1,4 @@
-# [Stochastic Sparse Adversarial Attacks](https://arxiv.org/abs/2011.12423)
+# [Stochastic Sparse Adversarial Attacks](https://hal.archives-ouvertes.fr/hal-03550949)
 
 Manon Césaire, Hatem Hajri, Sylvain Lamprier, Patrick Gallinari\
 *IRT SystemX, LIP6 - Sorbonne University* 
@@ -129,14 +129,7 @@ If you want to see the run time comparison, you should generate adversarial samp
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Citation:
-
-```
-@misc{cesaire2021stochastic,
-      title={Stochastic sparse adversarial attacks}, 
-      author={Manon Césaire and Hatem Hajri and Sylvain Lamprier and Patrick Gallinari},
-      year={2021},
-      eprint={2011.12423},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
-```
+Manon Cesaire, Hatem Hajri, Sylvain Lamprier, Patrick Gallinari. 
+Stochastic Sparse Adversarial Attacks. 
+2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI), Nov 2021, Washington, United States. 
+pp.1247-1254, [⟨10.1109/ICTAI52525.2021.00198⟩](https://ieeexplore.ieee.org/document/9643161). ⟨hal-03550949⟩
