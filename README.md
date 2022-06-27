@@ -1,4 +1,4 @@
-# [Stochastic Sparse Adversarial Attacks](https://hal.archives-ouvertes.fr/hal-03550949)
+# [Stochastic Sparse Adversarial Attacks](https://ieeexplore.ieee.org/document/9643161)
 
 Manon Césaire, Hatem Hajri, Sylvain Lamprier, Patrick Gallinari\
 *IRT SystemX, LIP6 - Sorbonne University* 
