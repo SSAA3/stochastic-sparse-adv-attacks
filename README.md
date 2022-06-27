@@ -129,7 +129,15 @@ If you want to see the run time comparison, you should generate adversarial samp
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Citation:
-Manon Cesaire, Hatem Hajri, Sylvain Lamprier, Patrick Gallinari. 
-Stochastic Sparse Adversarial Attacks. 
-2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI), Nov 2021, Washington, United States. 
-pp.1247-1254, [⟨10.1109/ICTAI52525.2021.00198⟩](https://ieeexplore.ieee.org/document/9643161). ⟨hal-03550949⟩
+```
+@INPROCEEDINGS{9643161,
+  author={Césaire, Manon and Schott, Lucas and Hajri, Hatem and Lamprier, Sylvain and Gallinari, Patrick},
+  booktitle={2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI)}, 
+  title={Stochastic sparse adversarial attacks}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1247-1254},
+  doi={10.1109/ICTAI52525.2021.00198}}
+```
+
